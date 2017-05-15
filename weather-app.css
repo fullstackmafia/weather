@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Oswald');
+
+
+body {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    background: #b3b3b3;
+    margin: 0;
+    overflow: hidden;
+}
+
+#fieldset {
+    border: none;
+}
+
+#weathertron {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    margin: 25px 0px 25px 50px;
+}
+
+@media only screen
+and (max-width: 900px) {
+    #weathertron {
+        display: block;
+        width: 90%;
+        overflow: hidden;
+        text-align: left;
+    }
+}
+
+
+
+#search-form {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+}
+
+@media only screen
+and (max-width: 994px) {
+    #search-form {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    #button-div {
+    display: block;
+    float: left;
+    margin: 0px 30px 0px 60px;
+    }
+
+}
+
+#city-search {
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+}
+
+#latitude-search {
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#longitude-search {
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+    #search-form {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+}
+   
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+}
+
+#get-weather {
+    margin: 50px 45px 10px 0px;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+@media only screen
+and (max-width: 495px) {
+    #get-weather {
+    width: 70%;
+    margin: 50px 50px 50px 0px;
+}
+   
+}
+
+#get-weather:hover {
+    opacity: 0.9;
+}
