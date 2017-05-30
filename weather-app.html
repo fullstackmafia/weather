@@ -2,28 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>An Awesome Weather App</title>
+        <title>Weather App</title>
         <link rel="stylesheet" type="text/css" href="weather-app.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="weather-app.js"></script>
     </head>
 
     <body>
-        <p id="weathertron">WEATHERTRON!</p>
-        <form id="form">
-            <fieldset id="fieldset">
-                <ul id="search-form">
-                    <li id="city">City</li>
-                        <input type="search" placeholder="e.g Festac, Lagos" id="city-search">
-                    <li id="latitude">Latitude</li>
-                        <input type="search" placeholder="e.g 42.47219" id="latitude-search" required>
-                    <li id="longitude">Longitude</li>
-                        <input type="search" placeholder="e.g -77.35612" id="longitude-search" required>
-                </ul>
-            </fieldset>
-        </form>
-        <div id="button-div">
-            <button id="get-weather">GET WEATHER</button>
+        <div class="weather-app">
+            <div class="left">
+                <div class="temperature"><span id="temperature">0</span>&deg;</div>
+                <!--<button onclick="changeWeather();">Change to F</button>-->
+                <div class="location"><span id="location">Unknown</span></div>
+        
+            </div>
+            <div class="right">
+                <div class="top">
+                    <img id="icon" width="75px">
+                </div>
+
+                <div class="bottom">
+
+                    <div class="humidity">
+                        <img src="imgs/drop.png" height="16px">
+                        <span id="humidity">0%</span>
+                    </div>
+
+                    <div class="wind">
+                        <span id="wind">0</span> mph <span id="direction"> N </span>
+                    </div>
+    
+                </div>
+            </div>
         </div>
-        <script src="" type="text/javascript"></script>
+        
     </body>
 </html>
